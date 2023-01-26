@@ -2,16 +2,19 @@ import './App.css'
 import Count from './components/Count'
 import EffectOnLoad from './components/EffectOnLoad'
 import EffectUnmount from './components/EffectUnmount'
+import FetchingInput from './components/FetchingInput'
 
 function App() {
   
   return (
     <div className="App">
-      <EffectOnLoad name="Cristian" />
+      {/* <EffectOnLoad name="Cristian" /> */}
       <br />
-      <EffectUnmount />
+      {/* <EffectUnmount /> */}
       <br />
-      <Count />
+      {/* <Count /> */}
+      <br />
+      < FetchingInput />
     </div>
   )
 }
