@@ -1,35 +1,38 @@
 import { useState } from 'react';
 import './App.css';
+import Form from './components/Form';
 
 function App() {
-  const [superhero, setSuperhero] = useState('');
-  const [superpower, setSuperpower] = useState('');
+  // const [superhero, setSuperhero] = useState('');
+  // const [superpower, setSuperpower] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    if (!superhero) {
-      alert('El campo es requerido');
-      return;
-    }
+  //   if (!superhero) {
+  //     alert('El campo es requerido');
+  //     return;
+  //   }
 
-    console.log({ name: superhero, power: superpower });
+  //   console.log({ name: superhero, power: superpower });
 
-    sendSuperhero({ name: superhero, power: superpower });
-    // Este send es un ej, no se está enviando a ninguna API
-  };
+  //   sendSuperhero({ name: superhero, power: superpower });
+  //   // Este send es un ej, no se está enviando a ninguna API
+  // };
 
-  const handleChangeSuperhero = (event) => {
-    setSuperhero(event.target.value);
-  };
+  // const handleChangeSuperhero = (event) => {
+  //   setSuperhero(event.target.value);
+  // };
 
-  const handleChangeSuperpower = (event) => {
-    setSuperpower(event.target.value);
-  };
+  // const handleChangeSuperpower = (event) => {
+  //   setSuperpower(event.target.value);
+  // };
 
   return (
     <div className="App">
-      <h1>React Forms!</h1>
+      < Form />
+
+      {/* <h1>React Forms!</h1>
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="superhero">Nombre del superhéroe:</label>
@@ -55,7 +58,7 @@ function App() {
         <br />
 
         <button type="submit">Enviar!</button>
-      </form>
+      </form> */}
     </div>
   );
 }
