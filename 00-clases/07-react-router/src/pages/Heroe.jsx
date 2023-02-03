@@ -5,7 +5,7 @@ import HeroeDetail from '../components/HeroeDetail';
 
 const Heroe = () => {
   const params = useParams();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const heroe = getHeroe(params.id);
 
   return (
@@ -15,7 +15,7 @@ const Heroe = () => {
       <button
         onClick={() => {
           deleteHeroe(heroe.id).then(() => {
-            navigate('/heroes')
+            navigate('/heroes');
           });
         }}
       >
