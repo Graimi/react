@@ -9,17 +9,16 @@ import Heroes from './pages/Heroes';
 import Heroe from './pages/Heroe';
 import NotFound from './pages/404';
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Home />}/>
-          <Route path='about' element={<About />}/>
-          <Route path='heroes' element={<Heroes />}/>
-          <Route path='heroe/:id' element={<Heroe />}/>
-          <Route path='*' element={<NotFound />}/>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="heroes" element={<Heroes />} />
+          <Route path="heroe/:id" element={<Heroe />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
