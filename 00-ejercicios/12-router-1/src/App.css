@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+}
+
+.active {
+  color: yellow;
+}
+
+nav a:hover {
+  color: yellowgreen;
+}
