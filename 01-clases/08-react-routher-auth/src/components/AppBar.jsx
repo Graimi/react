@@ -1,12 +1,13 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
 const AppBar = ({ pages }) => {
+  const navigate = useNavigate();
   const { user, logout } = useAuth();
 
   const handleNavigate = (path) => {
-    if (path) Navigate(path);
+    if (path) navigate(path);
   };
 
   return (

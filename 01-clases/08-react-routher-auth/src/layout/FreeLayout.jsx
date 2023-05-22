@@ -4,7 +4,7 @@ import { useAuth } from '../hooks/useAuth';
 import AppBar from '../components/AppBar';
 
 // Creamos el layout de un usuario no  registrado
-const FreeLayout = () => {
+export const FreeLayout = () => {
   const { user } = useAuth();
 
   // Si hay usuario lo mandamos a su dashboard
@@ -18,9 +18,7 @@ const FreeLayout = () => {
           { label: 'Login 📤', path: '/login' },
         ]}
       />
-      {Outlet}
+      <Outlet />
     </>
   );
 };
-
-export default FreeLayout;
